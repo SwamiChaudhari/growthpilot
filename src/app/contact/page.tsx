@@ -18,14 +18,14 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero bg-hero-pattern py-20 px-4">
+      <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="section-heading">Get In Touch</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-3 md:mb-4 tracking-tight">
             Let&apos;s Build Your{" "}
             <span className="text-gradient">Growth Engine</span>
           </h1>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
             Book a free strategy call, request a website audit, or just tell us
             about your business. We typically respond within 2 hours.
           </p>
@@ -33,7 +33,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Options */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* WhatsApp */}

@@ -15,22 +15,21 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero bg-hero-pattern py-20 px-4">
+      <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="section-heading">Blog & Insights</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-3 md:mb-4 tracking-tight">
             Business Growth{" "}
             <span className="text-gradient">Knowledge Hub</span>
           </h1>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Expert insights on websites, SEO, lead generation, and digital
-            growth strategies for local businesses.
+          <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
+            Expert insights on websites, SEO, lead generation, and digital growth strategies.
           </p>
         </div>
       </section>
 
       {/* Featured Posts */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-text-primary mb-8">
             Featured Articles
@@ -68,7 +67,7 @@ export default function BlogPage() {
       </section>
 
       {/* All Posts */}
-      <section className="py-20 px-4 bg-bg-primary">
+      <section className="py-12 md:py-20 px-4 bg-bg-primary">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-bold text-text-primary mb-8">
             All Articles
@@ -103,7 +102,7 @@ export default function BlogPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-cta text-center">
+      <section className="py-12 md:py-20 px-4 bg-gradient-cta text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Ready to Grow Your Business?
         </h2>

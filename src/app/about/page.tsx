@@ -13,21 +13,21 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero bg-hero-pattern py-20 px-4">
+      <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="section-heading">About Us</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-3 md:mb-4 tracking-tight">
             We&apos;re Building{" "}
             <span className="text-gradient">Growth Engines</span>
           </h1>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
             {siteConfig.description}
           </p>
         </div>
       </section>
 
       {/* Founder Profile */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-10 items-start">
             {/* Left — Photo & Quick Info */}
@@ -88,7 +88,7 @@ export default function AboutPage() {
       </section>
 
       {/* Education */}
-      <section className="py-20 px-4 bg-bg-primary">
+      <section className="py-12 md:py-20 px-4 bg-bg-primary">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-accent-primary/10 rounded-xl flex items-center justify-center">
@@ -114,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* Experience */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-accent-primary/10 rounded-xl flex items-center justify-center">
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* Projects */}
-      <section className="py-20 px-4 bg-bg-primary">
+      <section className="py-12 md:py-20 px-4 bg-bg-primary">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-accent-primary/10 rounded-xl flex items-center justify-center">
@@ -171,7 +171,7 @@ export default function AboutPage() {
       </section>
 
       {/* Skills */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-accent-primary/10 rounded-xl flex items-center justify-center">
@@ -190,7 +190,7 @@ export default function AboutPage() {
       </section>
 
       {/* Certifications & Achievements */}
-      <section className="py-20 px-4 bg-bg-primary">
+      <section className="py-12 md:py-20 px-4 bg-bg-primary">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Certifications */}
@@ -231,7 +231,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-cta text-center">
+      <section className="py-12 md:py-20 px-4 bg-gradient-cta text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Let&apos;s Build Something Great Together
         </h2>

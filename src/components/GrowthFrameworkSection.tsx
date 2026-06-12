@@ -29,7 +29,7 @@ export default function GrowthFrameworkSection() {
   const steps = growthFramework.steps;
 
   return (
-    <section className="py-24 px-4 bg-bg-primary relative overflow-hidden">
+    <section className="py-14 md:py-24 px-4 bg-bg-primary relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-accent-primary/3 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-secondary/2 rounded-full blur-3xl" />

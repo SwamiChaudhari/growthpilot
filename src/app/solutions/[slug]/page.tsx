@@ -35,19 +35,19 @@ export default function SolutionPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-hero bg-hero-pattern py-20 px-4">
+      <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <span className="section-heading">{solution.industries[0]}</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary mb-3 md:mb-4 tracking-tight">
             {solution.title}
           </h1>
-          <p className="text-accent-primary font-semibold text-xl mb-4">
+          <p className="text-accent-primary font-semibold text-lg md:text-xl mb-3 md:mb-4">
             {solution.tagline}
           </p>
-          <p className="text-text-secondary text-lg max-w-2xl mb-8">
+          <p className="text-text-secondary text-base md:text-lg max-w-2xl mb-6 md:mb-8">
             {solution.problem}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
             <Link href="/contact" className="btn-primary">
               Book Free Strategy Call <ArrowRight className="w-5 h-5" />
             </Link>
@@ -64,7 +64,7 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* Solution Details */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left */}
@@ -107,7 +107,7 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* Industries */}
-      <section className="py-20 px-4 bg-bg-primary">
+      <section className="py-12 md:py-20 px-4 bg-bg-primary">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-text-primary mb-4">
             Perfect For These Industries
@@ -126,7 +126,7 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-cta text-center">
+      <section className="py-12 md:py-20 px-4 bg-gradient-cta text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Ready to Get Started?
         </h2>

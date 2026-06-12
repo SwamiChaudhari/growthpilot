@@ -33,7 +33,7 @@ function getIcon(name: string): LucideIcon {
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-24 px-4 bg-white">
+    <section className="py-14 md:py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
