@@ -9,7 +9,6 @@ export default function LeadPopup() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    // Show popup after 15 seconds or on exit intent
     const timer = setTimeout(() => {
       if (!dismissed) setShow(true);
     }, 15000);
@@ -38,29 +37,29 @@ export default function LeadPopup() {
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-dark-900/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-text-primary/60 backdrop-blur-sm"
         onClick={handleClose}
       />
 
       {/* Popup */}
-      <div className="relative bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl animate-slide-up">
+      <div className="relative bg-white rounded-3xl p-8 max-w-md w-full shadow-premium animate-slide-up">
         {/* Close */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 w-8 h-8 bg-dark-100 rounded-full flex items-center justify-center hover:bg-dark-200 transition-colors"
+          className="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
         >
-          <X className="w-4 h-4 text-dark-600" />
+          <X className="w-4 h-4 text-text-secondary" />
         </button>
 
         {/* Icon */}
-        <div className="w-16 h-16 bg-gold-400/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-          <Gift className="w-8 h-8 text-gold-400" />
+        <div className="w-16 h-16 bg-accent-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <Gift className="w-8 h-8 text-accent-primary" />
         </div>
 
-        <h3 className="text-2xl font-bold text-dark-900 text-center mb-2">
+        <h3 className="text-2xl font-bold text-text-primary text-center mb-2">
           Get a Free Website Audit
         </h3>
-        <p className="text-dark-500 text-sm text-center mb-6">
+        <p className="text-text-secondary text-sm text-center mb-6">
           We&apos;ll analyze your current online presence and show you exactly
           what&apos;s costing you customers — and how to fix it.
         </p>
@@ -74,8 +73,8 @@ export default function LeadPopup() {
             "Competitor comparison",
             "Actionable recommendations",
           ].map((b, i) => (
-            <div key={i} className="flex items-center gap-2 text-sm text-dark-600">
-              <div className="w-1.5 h-1.5 bg-gold-400 rounded-full" />
+            <div key={i} className="flex items-center gap-2 text-sm text-text-secondary">
+              <div className="w-1.5 h-1.5 bg-accent-primary rounded-full" />
               {b}
             </div>
           ))}
@@ -90,7 +89,7 @@ export default function LeadPopup() {
           <ArrowRight className="w-5 h-5" />
         </Link>
 
-        <p className="text-dark-400 text-xs text-center mt-3">
+        <p className="text-text-muted text-xs text-center mt-3">
           No strings attached. 100% free.
         </p>
       </div>

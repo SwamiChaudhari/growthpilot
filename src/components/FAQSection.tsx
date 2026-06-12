@@ -8,14 +8,14 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-bg-primary">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <span className="section-heading">FAQ</span>
           <h2 className="section-title">
             Frequently Asked{" "}
-            <span className="text-gradient-gold">Questions</span>
+            <span className="text-gradient">Questions</span>
           </h2>
         </div>
 
@@ -26,8 +26,8 @@ export default function FAQSection() {
               key={i}
               className={`border rounded-xl overflow-hidden transition-all duration-300 ${
                 openIndex === i
-                  ? "border-gold-400/30 shadow-card"
-                  : "border-dark-100"
+                  ? "border-accent-primary/30 shadow-card bg-white"
+                  : "border-border bg-white"
               }`}
             >
               <button
@@ -38,7 +38,7 @@ export default function FAQSection() {
               >
                 <span
                   className={`font-semibold text-sm pr-4 ${
-                    openIndex === i ? "text-gold-400" : "text-dark-900"
+                    openIndex === i ? "text-accent-primary" : "text-text-primary"
                   }`}
                 >
                   {faq.q}
@@ -46,14 +46,14 @@ export default function FAQSection() {
                 <ChevronDown
                   className={`w-5 h-5 shrink-0 transition-transform duration-300 ${
                     openIndex === i
-                      ? "rotate-180 text-gold-400"
-                      : "text-dark-400"
+                      ? "rotate-180 text-accent-primary"
+                      : "text-text-muted"
                   }`}
                 />
               </button>
               {openIndex === i && (
                 <div className="px-5 pb-5">
-                  <p className="text-dark-500 text-sm leading-relaxed">
+                  <p className="text-text-secondary text-sm leading-relaxed">
                     {faq.a}
                   </p>
                 </div>

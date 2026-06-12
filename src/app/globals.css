@@ -7,35 +7,31 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white text-dark-800 antialiased;
+    @apply bg-bg-primary text-text-primary antialiased;
     font-family: "Inter", system-ui, -apple-system, sans-serif;
   }
   ::selection {
-    @apply bg-gold-400/30 text-dark-900;
+    @apply bg-accent-primary/15 text-text-primary;
   }
 }
 
 @layer components {
   /* --- Buttons --- */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-gold-400 text-dark-900 font-bold px-8 py-4 rounded-xl
-    hover:bg-gold-500 active:scale-[0.97] transition-all duration-300 shadow-lg shadow-gold-400/25 text-base;
+    @apply inline-flex items-center justify-center gap-2 bg-accent-primary text-text-primary font-semibold px-7 py-3.5 rounded-xl
+    hover:bg-accent-hover active:scale-[0.97] transition-all duration-300 shadow-cta text-base tracking-tight;
   }
-  .btn-dark {
-    @apply inline-flex items-center justify-center gap-2 bg-dark-900 text-white font-bold px-8 py-4 rounded-xl
-    hover:bg-dark-800 active:scale-[0.97] transition-all duration-300 shadow-lg text-base;
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-white text-text-primary font-semibold px-7 py-3.5 rounded-xl
+    border border-border hover:bg-gray-50 hover:border-border-hover active:scale-[0.97] transition-all duration-300 shadow-subtle text-base tracking-tight;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 border-2 border-gold-400 text-gold-400 font-bold px-8 py-4 rounded-xl
-    hover:bg-gold-400 hover:text-dark-900 active:scale-[0.97] transition-all duration-300 text-base;
-  }
-  .btn-outline-white {
-    @apply inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-xl
-    hover:bg-white/10 hover:border-white/60 active:scale-[0.97] transition-all duration-300 backdrop-blur-sm text-base;
+    @apply inline-flex items-center justify-center gap-2 border-2 border-accent-primary text-accent-primary font-semibold px-7 py-3.5 rounded-xl
+    hover:bg-accent-primary hover:text-text-primary active:scale-[0.97] transition-all duration-300 text-base;
   }
   .btn-whatsapp {
-    @apply inline-flex items-center justify-center gap-2 bg-green-500 text-white font-bold px-8 py-4 rounded-xl
-    hover:bg-green-600 active:scale-[0.97] transition-all duration-300 shadow-lg shadow-green-500/25 text-base;
+    @apply inline-flex items-center justify-center gap-2 bg-success text-text-primary font-semibold px-7 py-3.5 rounded-xl
+    hover:bg-green-700 active:scale-[0.97] transition-all duration-300 shadow-lg shadow-success/20 text-base;
   }
   .btn-sm {
     @apply px-5 py-2.5 text-sm;
@@ -43,75 +39,51 @@
 
   /* --- Cards --- */
   .card {
-    @apply bg-white rounded-2xl shadow-card border border-dark-100 p-6
+    @apply bg-bg-card rounded-2xl shadow-card border border-border p-6
     hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300;
   }
   .card-premium {
-    @apply bg-white rounded-2xl shadow-card border border-dark-100 overflow-hidden
-    hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500;
-  }
-  .card-dark {
-    @apply bg-dark-800 rounded-2xl border border-dark-700 p-6
-    hover:border-gold-400/30 transition-all duration-300;
-  }
-  .card-glass {
-    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg;
+    @apply bg-bg-card rounded-2xl shadow-card border border-border overflow-hidden
+    hover:shadow-card-hover hover:-translate-y-1 transition-all duration-500;
   }
 
   /* --- Sections --- */
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dark-900 mb-4 leading-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-4 leading-[1.1] tracking-tight;
   }
   .section-subtitle {
-    @apply text-lg md:text-xl text-dark-500 max-w-2xl mx-auto leading-relaxed;
+    @apply text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed;
   }
   .section-heading {
-    @apply text-sm font-bold uppercase tracking-widest text-gold-400 mb-2;
+    @apply text-xs font-semibold uppercase tracking-[0.15em] text-accent-primary mb-3;
   }
 
   /* --- Forms --- */
   .input-field {
-    @apply w-full px-4 py-3.5 border border-dark-200 rounded-xl bg-dark-50
-    focus:ring-2 focus:ring-gold-400 focus:border-gold-400 focus:bg-white
-    outline-none transition-all duration-200 text-dark-800 placeholder-dark-400;
+    @apply w-full px-4 py-3.5 border border-border rounded-xl bg-white
+    focus:ring-2 focus:ring-accent-primary/20 focus:border-accent-primary
+    outline-none transition-all duration-200 text-text-primary placeholder-text-muted;
   }
   .label {
-    @apply block text-sm font-semibold text-dark-700 mb-1.5;
-  }
-
-  /* --- Glassmorphism --- */
-  .glass {
-    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl;
-  }
-  .glass-dark {
-    @apply bg-dark-900/70 backdrop-blur-xl border border-white/10 rounded-2xl;
+    @apply block text-sm font-medium text-text-primary mb-1.5;
   }
 }
 
 @layer utilities {
-  .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-400 via-gold-300 to-gold-500 bg-clip-text text-transparent;
-  }
-  .text-gradient-white {
-    @apply bg-gradient-to-r from-white via-gold-200 to-white bg-clip-text text-transparent;
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-navy bg-clip-text text-transparent;
   }
   .bg-hero-pattern {
     background-image:
-      radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+      radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(248, 247, 244, 0.8) 0%, transparent 70%);
   }
   .bg-grid-pattern {
     background-image:
-      linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba(37, 99, 235, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
     background-size: 60px 60px;
-  }
-  .text-shadow {
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  }
-  .text-shadow-sm {
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   }
   .scrollbar-hide::-webkit-scrollbar { display: none; }
   .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }

@@ -44,12 +44,11 @@ function AnimatedCounter({
 
   useEffect(() => {
     if (!started) return;
-    // For simplicity, just show the target value
     setCount(end);
   }, [started, end]);
 
   return (
-    <div ref={ref} className="text-4xl md:text-5xl font-bold text-white">
+    <div ref={ref} className="text-4xl md:text-5xl font-bold text-text-primary">
       {count}
       {suffix}
     </div>
@@ -58,19 +57,17 @@ function AnimatedCounter({
 
 export default function ResultsSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-dark relative overflow-hidden">
+    <section className="py-24 px-4 bg-bg-primary relative overflow-hidden">
       <div className="absolute inset-0 bg-hero-pattern" />
 
       <div className="relative max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-gold-400 font-bold uppercase tracking-widest text-sm mb-3">
-            Real Results
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <span className="section-heading">Real Results</span>
+          <h2 className="section-title text-text-primary">
             Outcomes That Matter
           </h2>
-          <p className="text-dark-300 text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
             We don&apos;t measure success by how your website looks. We measure
             it by how it performs.
           </p>
@@ -83,16 +80,16 @@ export default function ResultsSection() {
             return (
               <div
                 key={i}
-                className="glass-border bg-white/5 backdrop-blur-xl rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-6 text-center border border-border shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 group"
               >
-                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-gold rounded-2xl flex items-center justify-center shadow-lg shadow-gold-400/20 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-7 h-7 text-dark-900" />
+                <div className="w-14 h-14 mx-auto mb-4 bg-accent-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-accent-primary group-hover:shadow-cta transition-all duration-300">
+                  <Icon className="w-7 h-7 text-accent-primary group-hover:text-white transition-colors" />
                 </div>
                 <AnimatedCounter end={result.value} />
-                <p className="text-white font-semibold text-sm mt-2">
+                <p className="text-text-primary font-semibold text-sm mt-2">
                   {result.label}
                 </p>
-                <p className="text-dark-400 text-xs mt-1">{result.description}</p>
+                <p className="text-text-muted text-xs mt-1">{result.description}</p>
               </div>
             );
           })}

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export default function PricingSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-section" id="pricing">
+    <section className="py-24 px-4 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-heading">Pricing</span>
           <h2 className="section-title">
             Growth Systems That{" "}
-            <span className="text-gradient-gold">Pay for Themselves</span>
+            <span className="text-gradient">Pay for Themselves</span>
           </h2>
           <p className="section-subtitle">
             Invest in a growth engine that generates leads and revenue. Choose
@@ -28,13 +28,13 @@ export default function PricingSection() {
               key={i}
               className={`rounded-2xl p-6 flex flex-col ${
                 plan.highlighted
-                  ? "bg-dark-900 border-2 border-gold-400 shadow-xl shadow-gold-400/10 relative"
-                  : "bg-white border border-dark-100 shadow-card"
+                  ? "bg-gradient-cta text-white shadow-cta relative"
+                  : "bg-white border border-border shadow-card"
               }`}
             >
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold text-dark-900 text-xs font-bold px-4 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-accent-primary text-xs font-bold px-4 py-1 rounded-full shadow-card">
                   {plan.badge}
                 </div>
               )}
@@ -43,14 +43,14 @@ export default function PricingSection() {
               <div className="mb-4 mt-2">
                 <h3
                   className={`text-lg font-bold ${
-                    plan.highlighted ? "text-white" : "text-dark-900"
+                    plan.highlighted ? "text-white" : "text-text-primary"
                   }`}
                 >
                   {plan.name}
                 </h3>
                 <p
                   className={`text-sm ${
-                    plan.highlighted ? "text-dark-300" : "text-dark-500"
+                    plan.highlighted ? "text-white/70" : "text-text-muted"
                   }`}
                 >
                   {plan.tagline}
@@ -62,7 +62,7 @@ export default function PricingSection() {
                 <div className="flex items-baseline gap-2">
                   <span
                     className={`text-3xl font-bold ${
-                      plan.highlighted ? "text-gold-400" : "text-dark-900"
+                      plan.highlighted ? "text-white" : "text-text-primary"
                     }`}
                   >
                     {plan.price}
@@ -70,7 +70,7 @@ export default function PricingSection() {
                   {plan.originalPrice && (
                     <span
                       className={`text-sm line-through ${
-                        plan.highlighted ? "text-dark-500" : "text-dark-400"
+                        plan.highlighted ? "text-white/50" : "text-text-muted"
                       }`}
                     >
                       {plan.originalPrice}
@@ -79,7 +79,7 @@ export default function PricingSection() {
                 </div>
                 <p
                   className={`text-xs mt-1 ${
-                    plan.highlighted ? "text-dark-400" : "text-dark-500"
+                    plan.highlighted ? "text-white/60" : "text-text-muted"
                   }`}
                 >
                   One-time investment
@@ -89,24 +89,24 @@ export default function PricingSection() {
               {/* Description */}
               <p
                 className={`text-sm mb-6 ${
-                  plan.highlighted ? "text-dark-300" : "text-dark-500"
+                  plan.highlighted ? "text-white/80" : "text-text-secondary"
                 }`}
               >
                 {plan.description}
               </p>
 
               {/* Features */}
-              <div className="flex-1 space-y-2 mb-6">
+              <div className="flex-1 space-y-2.5 mb-6">
                 {plan.features.map((feature, j) => (
                   <div key={j} className="flex items-start gap-2">
                     <CheckCircle
                       className={`w-4 h-4 shrink-0 mt-0.5 ${
-                        plan.highlighted ? "text-gold-400" : "text-emerald-500"
+                        plan.highlighted ? "text-white/80" : "text-success"
                       }`}
                     />
                     <span
                       className={`text-sm ${
-                        plan.highlighted ? "text-dark-200" : "text-dark-600"
+                        plan.highlighted ? "text-white/90" : "text-text-secondary"
                       }`}
                     >
                       {feature}
@@ -118,10 +118,10 @@ export default function PricingSection() {
               {/* CTA */}
               <Link
                 href="/contact"
-                className={`w-full text-center font-semibold py-3 rounded-xl transition-all duration-300 text-sm ${
+                className={`w-full text-center font-semibold py-3.5 rounded-xl transition-all duration-300 text-sm ${
                   plan.highlighted
-                    ? "btn-primary"
-                    : "bg-dark-900 text-white hover:bg-dark-800"
+                    ? "bg-white text-accent-primary hover:bg-white/90"
+                    : "btn-secondary"
                 }`}
               >
                 {plan.cta}
@@ -132,11 +132,11 @@ export default function PricingSection() {
 
         {/* Bottom Note */}
         <div className="text-center mt-10">
-          <p className="text-dark-500 text-sm">
+          <p className="text-text-muted text-sm">
             All plans include free consultation. Not sure which plan?{" "}
             <Link
               href="/contact"
-              className="text-gold-400 font-semibold hover:underline"
+              className="text-accent-primary font-semibold hover:underline"
             >
               Book a free strategy call
             </Link>{" "}

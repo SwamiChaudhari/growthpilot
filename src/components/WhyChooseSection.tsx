@@ -33,14 +33,14 @@ function getIcon(name: string): LucideIcon {
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-heading">Why GrowthPilot</span>
           <h2 className="section-title">
             Why Local Businesses{" "}
-            <span className="text-gradient-gold">Choose Us</span>
+            <span className="text-gradient">Choose Us</span>
           </h2>
           <p className="section-subtitle">
             We&apos;re not just another web design agency. We&apos;re your
@@ -55,15 +55,15 @@ export default function WhyChooseSection() {
             return (
               <div
                 key={i}
-                className="card text-center group hover:border-gold-400/30"
+                className="bg-bg-primary rounded-2xl p-5 text-center border border-border hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 group"
               >
-                <div className="w-12 h-12 mx-auto mb-3 bg-gold-400/10 rounded-xl flex items-center justify-center group-hover:bg-gold-400 group-hover:shadow-gold transition-all duration-300">
-                  <Icon className="w-6 h-6 text-gold-400 group-hover:text-dark-900 transition-colors" />
+                <div className="w-12 h-12 mx-auto mb-3 bg-accent-primary/10 rounded-xl flex items-center justify-center group-hover:bg-accent-primary group-hover:shadow-cta transition-all duration-300">
+                  <Icon className="w-6 h-6 text-accent-primary group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-sm font-bold text-dark-900 mb-1">
+                <h3 className="text-sm font-bold text-text-primary mb-1">
                   {item.title}
                 </h3>
-                <p className="text-dark-500 text-xs leading-relaxed">
+                <p className="text-text-muted text-xs leading-relaxed">
                   {item.description}
                 </p>
               </div>

@@ -28,14 +28,14 @@ export default function VideoSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-section">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-heading">Video</span>
           <h2 className="section-title">
             See GrowthPilot{" "}
-            <span className="text-gradient-gold">In Action</span>
+            <span className="text-gradient">In Action</span>
           </h2>
           <p className="section-subtitle">
             Watch short videos to understand our approach, process, and the
@@ -48,36 +48,36 @@ export default function VideoSection() {
           {videos.map((video, i) => (
             <div
               key={i}
-              className="card-premium group cursor-pointer hover:border-gold-400/30"
+              className="bg-white rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
             >
-              <div className="p-6">
-                {/* Video Thumbnail Placeholder */}
-                <div className="relative bg-dark-900 rounded-xl aspect-video mb-4 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-dark-900 to-dark-800" />
-                  <div className="absolute inset-0 bg-gold-400/5 group-hover:bg-gold-400/10 transition-colors" />
+              {/* Video Thumbnail Placeholder */}
+              <div className="relative bg-bg-primary aspect-video flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-bg-primary to-gray-100" />
+                <div className="absolute inset-0 bg-accent-primary/5 group-hover:bg-accent-primary/10 transition-colors" />
 
-                  {/* Play Button */}
-                  <div className="relative w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center shadow-lg shadow-gold-400/30 group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-7 h-7 text-dark-900 ml-1" />
-                  </div>
-
-                  {/* Duration */}
-                  <div className="absolute bottom-3 right-3 bg-dark-900/80 text-white text-xs font-semibold px-2 py-1 rounded">
-                    {video.duration}
-                  </div>
+                {/* Play Button */}
+                <div className="relative w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-card-hover group-hover:scale-110 transition-transform duration-300">
+                  <Play className="w-7 h-7 text-accent-primary ml-1" />
                 </div>
 
-                <h3 className="text-lg font-bold text-dark-900 mb-1 group-hover:text-gold-400 transition-colors">
+                {/* Duration */}
+                <div className="absolute bottom-3 right-3 bg-text-primary/80 text-white text-xs font-semibold px-2 py-1 rounded">
+                  {video.duration}
+                </div>
+              </div>
+
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-text-primary mb-1 group-hover:text-accent-primary transition-colors">
                   {video.title}
                 </h3>
-                <p className="text-dark-500 text-sm">{video.description}</p>
+                <p className="text-text-secondary text-sm">{video.description}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-10">
+        <div className="text-center mt-12">
           <Link href="/contact" className="btn-primary">
             Book a Live Strategy Call Instead
             <ArrowRight className="w-5 h-5" />

@@ -18,10 +18,10 @@ export default function StickyMobileCTA() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-dark-900/95 backdrop-blur-md border-t border-white/10 shadow-2xl p-3 flex gap-3">
+    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-border shadow-2xl p-3 flex gap-3">
       <a
         href={`tel:${siteConfig.phone}`}
-        className="flex-1 flex items-center justify-center gap-2 bg-gold-400 text-dark-900 font-bold py-3 rounded-xl"
+        className="flex-1 flex items-center justify-center gap-2 bg-accent-primary text-white font-bold py-3 rounded-xl"
       >
         <Phone className="w-5 h-5" />
         Call Now
@@ -30,7 +30,7 @@ export default function StickyMobileCTA() {
         href={`https://wa.me/${siteConfig.whatsapp}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-3 rounded-xl"
+        className="flex-1 flex items-center justify-center gap-2 bg-success text-white font-bold py-3 rounded-xl"
       >
         <MessageCircle className="w-5 h-5" />
         WhatsApp

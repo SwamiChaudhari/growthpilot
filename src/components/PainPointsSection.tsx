@@ -27,14 +27,14 @@ function getIcon(name: string): LucideIcon {
 
 export default function PainPointsSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-section">
+    <section className="py-24 px-4 bg-bg-primary">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-heading">The Problem</span>
           <h2 className="section-title">
             Is Your Website Costing You{" "}
-            <span className="text-gradient-gold">Customers?</span>
+            <span className="text-gradient">Customers?</span>
           </h2>
           <p className="section-subtitle">
             Most local businesses are losing customers every day because of these
@@ -43,32 +43,30 @@ export default function PainPointsSection() {
         </div>
 
         {/* Pain Points Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {painPoints.map((point, i) => {
             const Icon = getIcon(point.icon);
             return (
               <div
                 key={i}
-                className="card-premium group border-l-4 border-l-red-400"
+                className="bg-white rounded-2xl p-6 border border-border shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="p-6">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-red-100 transition-colors">
-                      <Icon className="w-6 h-6 text-red-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-dark-900">
-                        {point.title}
-                      </h3>
-                      <p className="text-red-500 font-semibold text-sm">
-                        = {point.result}
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
+                    <Icon className="w-6 h-6 text-red-500" />
                   </div>
-                  <p className="text-dark-500 text-sm leading-relaxed">
-                    {point.description}
-                  </p>
+                  <div>
+                    <h3 className="text-lg font-bold text-text-primary">
+                      {point.title}
+                    </h3>
+                    <p className="text-red-500 font-semibold text-sm">
+                      = {point.result}
+                    </p>
+                  </div>
                 </div>
+                <p className="text-text-secondary text-sm leading-relaxed">
+                  {point.description}
+                </p>
               </div>
             );
           })}
@@ -76,12 +74,12 @@ export default function PainPointsSection() {
 
         {/* Solution CTA */}
         <div className="text-center">
-          <div className="inline-block bg-dark-900 rounded-2xl p-8 md:p-10 max-w-2xl">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+          <div className="inline-block bg-white rounded-2xl p-8 md:p-12 max-w-2xl shadow-card-hover border border-border">
+            <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
               The Good News?{" "}
-              <span className="text-gradient-gold">We Fix All of This.</span>
+              <span className="text-gradient">We Fix All of This.</span>
             </h3>
-            <p className="text-dark-300 mb-6">
+            <p className="text-text-secondary mb-8">
               GrowthPilot builds complete digital growth systems that solve
               every one of these problems — and turn your website into your
               hardest-working employee.
@@ -91,7 +89,7 @@ export default function PainPointsSection() {
                 Get Free Website Audit
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="#solutions" className="btn-outline-white">
+              <Link href="#solutions" className="btn-secondary">
                 See Our Solutions
               </Link>
             </div>

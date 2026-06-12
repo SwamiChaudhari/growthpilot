@@ -6,22 +6,22 @@ import Link from "next/link";
 
 export default function OfferStackSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-bg-primary">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <span className="section-heading">Everything Included</span>
-          <h2 className="section-title">{offerStack.title}</h2>
+          <h2 className="section-title text-text-primary">{offerStack.title}</h2>
           <p className="section-subtitle">{offerStack.subtitle}</p>
         </div>
 
         {/* Offer Stack Card */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gold-400/5 rounded-3xl blur-xl" />
-          <div className="relative bg-dark-900 rounded-3xl p-8 md:p-12 border border-gold-400/20">
+          <div className="absolute inset-0 bg-accent-primary/5 rounded-3xl blur-xl" />
+          <div className="relative bg-white rounded-3xl p-8 md:p-12 border border-border shadow-card-hover">
             {/* Value Badge */}
             <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 bg-gold-400/10 border border-gold-400/20 text-gold-400 px-4 py-2 rounded-full text-sm font-bold">
+              <div className="inline-flex items-center gap-2 bg-accent-primary/10 border border-accent-primary/20 text-accent-primary px-4 py-2 rounded-full text-sm font-bold">
                 Total Value: ₹1,50,000+ | Starting at just ₹14,999
               </div>
             </div>
@@ -31,9 +31,9 @@ export default function OfferStackSection() {
               {offerStack.items.map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 text-dark-200"
+                  className="flex items-center gap-3 text-text-secondary"
                 >
-                  <CheckCircle className="w-5 h-5 text-gold-400 shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-success shrink-0" />
                   <span className="text-sm">{item.name}</span>
                 </div>
               ))}
@@ -45,11 +45,11 @@ export default function OfferStackSection() {
                 See Pricing Plans
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <p className="text-dark-400 text-sm mt-3">
+              <p className="text-text-muted text-sm mt-3">
                 Or{" "}
                 <Link
                   href="/contact"
-                  className="text-gold-400 font-semibold hover:underline"
+                  className="text-accent-primary font-semibold hover:underline"
                 >
                   book a free strategy call
                 </Link>{" "}

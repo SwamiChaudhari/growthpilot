@@ -24,8 +24,8 @@ export default function SolutionPage({ params }: Props) {
   if (!solution) {
     return (
       <div className="py-20 text-center">
-        <h1 className="text-2xl font-bold">Solution not found</h1>
-        <Link href="/" className="text-gold-400 mt-4 inline-block">
+        <h1 className="text-2xl font-bold text-text-primary">Solution not found</h1>
+        <Link href="/" className="text-accent-primary mt-4 inline-block">
           Go Home
         </Link>
       </div>
@@ -37,16 +37,14 @@ export default function SolutionPage({ params }: Props) {
       {/* Hero */}
       <section className="bg-gradient-hero bg-hero-pattern py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-block text-gold-400 font-bold uppercase tracking-widest text-sm mb-4">
-            {solution.industries[0]}
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <span className="section-heading">{solution.industries[0]}</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4 tracking-tight">
             {solution.title}
           </h1>
-          <p className="text-gold-400 font-semibold text-xl mb-4">
+          <p className="text-accent-primary font-semibold text-xl mb-4">
             {solution.tagline}
           </p>
-          <p className="text-dark-300 text-lg max-w-2xl mb-8">
+          <p className="text-text-secondary text-lg max-w-2xl mb-8">
             {solution.problem}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -66,39 +64,39 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* Solution Details */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left */}
             <div>
-              <h2 className="text-2xl font-bold text-dark-900 mb-4">The Challenge</h2>
-              <p className="text-dark-500 leading-relaxed mb-8">{solution.problem}</p>
+              <h2 className="text-2xl font-bold text-text-primary mb-4">The Challenge</h2>
+              <p className="text-text-secondary leading-relaxed mb-8">{solution.problem}</p>
 
-              <h2 className="text-2xl font-bold text-dark-900 mb-4">Our Solution</h2>
-              <p className="text-dark-500 leading-relaxed">{solution.solution}</p>
+              <h2 className="text-2xl font-bold text-text-primary mb-4">Our Solution</h2>
+              <p className="text-text-secondary leading-relaxed">{solution.solution}</p>
             </div>
 
             {/* Right */}
             <div>
-              <div className="bg-dark-900 rounded-2xl p-8 mb-6">
-                <h3 className="text-white font-bold text-lg mb-4">What You Get</h3>
+              <div className="bg-bg-primary rounded-2xl p-8 mb-6 border border-border">
+                <h3 className="text-text-primary font-bold text-lg mb-4">What You Get</h3>
                 <div className="space-y-3">
                   {solution.benefits.map((b, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-gold-400 shrink-0" />
-                      <span className="text-dark-200 text-sm">{b}</span>
+                      <CheckCircle className="w-5 h-5 text-success shrink-0" />
+                      <span className="text-text-secondary text-sm">{b}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-gold-400/5 border border-gold-400/20 rounded-2xl p-8">
-                <h3 className="text-dark-900 font-bold text-lg mb-4">Expected Outcomes</h3>
+              <div className="bg-accent-primary/5 border border-accent-primary/10 rounded-2xl p-8">
+                <h3 className="text-text-primary font-bold text-lg mb-4">Expected Outcomes</h3>
                 <div className="space-y-3">
                   {solution.outcomes.map((o, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <ArrowRight className="w-5 h-5 text-gold-400 shrink-0" />
-                      <span className="text-dark-700 text-sm">{o}</span>
+                      <ArrowRight className="w-5 h-5 text-accent-primary shrink-0" />
+                      <span className="text-text-primary text-sm">{o}</span>
                     </div>
                   ))}
                 </div>
@@ -109,16 +107,16 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* Industries */}
-      <section className="py-16 px-4 bg-gradient-section">
+      <section className="py-20 px-4 bg-bg-primary">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-dark-900 mb-4">
+          <h2 className="text-2xl font-bold text-text-primary mb-4">
             Perfect For These Industries
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {solution.industries.map((ind, i) => (
               <span
                 key={i}
-                className="bg-white border border-dark-100 rounded-full px-5 py-2 text-sm font-medium text-dark-700"
+                className="bg-white border border-border rounded-full px-5 py-2 text-sm font-medium text-text-primary shadow-subtle"
               >
                 {ind}
               </span>
@@ -128,19 +126,19 @@ export default function SolutionPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-dark-900 text-center">
+      <section className="py-20 px-4 bg-gradient-cta text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Ready to Get Started?
         </h2>
-        <p className="text-dark-300 mb-8 max-w-xl mx-auto">
+        <p className="text-white/70 mb-8 max-w-xl mx-auto">
           Let&apos;s discuss how the {solution.title} can help your business
           grow. Book a free strategy call today.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact" className="btn-primary">
+          <Link href="/contact" className="bg-white text-accent-primary font-semibold px-7 py-3.5 rounded-xl hover:bg-white/90 active:scale-[0.97] transition-all duration-300 inline-flex items-center justify-center gap-2">
             Book Free Strategy Call <ArrowRight className="w-5 h-5" />
           </Link>
-          <Link href="/#pricing" className="btn-outline-white">
+          <Link href="/#pricing" className="border-2 border-white/30 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 active:scale-[0.97] transition-all duration-300 inline-flex items-center justify-center gap-2">
             View Pricing
           </Link>
         </div>

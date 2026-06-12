@@ -17,7 +17,7 @@ export default function LeadFrameworkSection() {
   const steps = leadFramework.steps;
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — Content */}
@@ -25,11 +25,11 @@ export default function LeadFrameworkSection() {
             <span className="section-heading">Our Methodology</span>
             <h2 className="section-title mb-6">
               The{" "}
-              <span className="text-gradient-gold">
+              <span className="text-gradient">
                 {leadFramework.title}
               </span>
             </h2>
-            <p className="text-dark-500 text-lg mb-8 leading-relaxed">
+            <p className="text-text-secondary text-lg mb-10 leading-relaxed">
               {leadFramework.subtitle}
             </p>
 
@@ -38,19 +38,19 @@ export default function LeadFrameworkSection() {
                 const Icon = getIcon(step.icon);
                 return (
                   <div key={i} className="flex gap-4">
-                    <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center shrink-0 shadow-gold">
-                      <Icon className="w-6 h-6 text-dark-900" />
+                    <div className="w-12 h-12 bg-gradient-cta rounded-xl flex items-center justify-center shrink-0 shadow-cta">
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-gold-400 font-black text-sm">
+                        <span className="text-accent-primary font-black text-sm">
                           {step.letter}
                         </span>
-                        <h3 className="text-lg font-bold text-dark-900">
+                        <h3 className="text-lg font-bold text-text-primary">
                           {step.title}
                         </h3>
                       </div>
-                      <p className="text-dark-500 text-sm leading-relaxed">
+                      <p className="text-text-secondary text-sm leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -63,8 +63,8 @@ export default function LeadFrameworkSection() {
           {/* Right — Visual */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gold-400/10 rounded-3xl blur-3xl" />
-              <div className="relative bg-dark-900 rounded-3xl p-8 md:p-10 max-w-md">
+              <div className="absolute inset-0 bg-accent-primary/5 rounded-3xl blur-2xl" />
+              <div className="relative bg-bg-primary rounded-3xl p-8 md:p-10 max-w-md border border-border">
                 {/* LEAD Letters */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   {steps.map((step, i) => {
@@ -72,15 +72,15 @@ export default function LeadFrameworkSection() {
                     return (
                       <div
                         key={i}
-                        className="bg-white/5 border border-white/10 rounded-2xl p-5 text-center hover:border-gold-400/30 transition-all duration-300 group"
+                        className="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 group"
                       >
-                        <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                          <span className="text-dark-900 font-black text-lg">
+                        <div className="w-12 h-12 bg-gradient-cta rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform shadow-cta">
+                          <span className="text-white font-black text-lg">
                             {step.letter}
                           </span>
                         </div>
-                        <Icon className="w-5 h-5 text-gold-400 mx-auto mb-2" />
-                        <p className="text-white font-semibold text-sm">
+                        <Icon className="w-5 h-5 text-accent-primary mx-auto mb-2" />
+                        <p className="text-text-primary font-semibold text-sm">
                           {step.title}
                         </p>
                       </div>
@@ -89,10 +89,10 @@ export default function LeadFrameworkSection() {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-gold-400 font-bold text-sm uppercase tracking-widest">
+                  <p className="text-accent-primary font-bold text-sm uppercase tracking-widest">
                     Proven Framework
                   </p>
-                  <p className="text-dark-400 text-xs mt-1">
+                  <p className="text-text-muted text-xs mt-1">
                     Used by 50+ growing businesses
                   </p>
                 </div>
