@@ -8,28 +8,79 @@ export const siteConfig = {
   description:
     "Helping local businesses generate more leads, appointments, and revenue through high-converting websites and digital growth systems.",
   url: "https://growthpilot.in",
-  phone: "+91 91455 64291",
-  whatsapp: "919145564291",
-  email: "hello@growthpilot.in",
+  phone: "+91 93567 33878",
+  whatsapp: "919356733878",
+  email: "swami1642004@gmail.com",
   address: "Pune, Maharashtra, India",
   founded: "2024",
 };
 
 export const founder = {
   name: "Swami Chaudhari",
-  role: "Founder & Growth Systems Developer",
-  bio: "A young entrepreneur on a mission to help local businesses modernize, compete online, and generate more customers through technology. With expertise in full-stack development, SEO, and conversion optimization, Swami builds digital growth systems that deliver real business results.",
+  role: "AI Engineer & Founder",
+  bio: "An AI Engineer and entrepreneur with hands-on experience building intelligent systems spanning Machine Learning, NLP, Semantic Search, and Large Language Models. Built end-to-end churn prediction platforms processing 100K+ records, designed NLP-powered AI systems, and engineered automated data pipelines scraping 50K+ records from 12+ sources. Now applying that same technical depth to help local businesses grow through high-converting websites and digital growth systems.",
   mission:
     "Every local business deserves a professional online presence that actively generates leads and drives growth — not just a digital brochure that sits there.",
   vision:
     "To become the go-to growth partner for local businesses across India, helping them compete with larger players through smart technology and strategic digital presence.",
   highlights: [
+    "AI & Machine Learning Expertise",
+    "Python & Full-Stack Development",
+    "NLP & Semantic Search",
+    "MLOps, Docker & CI/CD",
+    "Data-Driven Approach",
     "Direct Founder Communication",
-    "Personalized Support",
     "Fast Execution",
-    "Modern Technology Expertise",
-    "Business Growth Mindset",
-    "Long-Term Partnership Approach",
+  ],
+  education: {
+    degree: "Bachelor of Engineering in Computer Engineering",
+    college: "Viva Institute of Technology, Mumbai, Maharashtra",
+    year: "2026",
+    gpa: "7.12/10",
+  },
+  experience: [
+    {
+      role: "Research and Development Trainer Intern",
+      company: "Robokart",
+      points: [
+        "Built and compared 5 ML models (CatBoost, XGBoost, LightGBM, Logistic Regression, Random Forest) achieving 80% prediction accuracy on customer churn dataset",
+        "Performed feature engineering on 20+ variables, managing model versioning and experiment tracking with Git for MLOps best practices",
+        "Implemented SHAP-based model explainability to provide interpretable insights for business stakeholders",
+        "Developed Python scripts for real-time sensor data processing, achieving 15% system efficiency optimization through data-driven automation",
+      ],
+    },
+  ],
+  projects: [
+    {
+      name: "AI-Powered Churn Prediction & Retention Platform",
+      description: "Built and compared 5 ML classification models achieving 80% accuracy on 100K+ customer records. Containerized with Docker, CI/CD pipeline, deployed interactive Streamlit dashboard.",
+      tech: "Python, CatBoost, XGBoost, LightGBM, Scikit-learn, SHAP, MLOps, Docker",
+    },
+    {
+      name: "PriceSentry — Competitive Price Intelligence Platform",
+      description: "Designed end-to-end price intelligence platform. Built automated ETL workflow processing 50,000+ price records from 12+ e-commerce sources with 95% data accuracy.",
+      tech: "Python, Flask, Web Scraping, ETL Pipelines, SQL, Streamlit, Pandas, Plotly",
+    },
+    {
+      name: "ShlokaSutra — Where Ancient Wisdom Meets AI",
+      description: "Built AI-powered system combining Bhagavad Gita with NLP, ML, Semantic Search, and LLMs. Knowledge base of 700+ shlokas with 360-degree semantic search coverage.",
+      tech: "Python, NLP, Machine Learning, Semantic Search, LLMs, Deep Learning, Scikit-learn",
+    },
+  ],
+  certifications: [
+    "Data Analytics Essentials — Cisco Networking Academy (Oct 2025)",
+  ],
+  achievements: [
+    "Paper Presentation — Shloka Sutra: Ancient Verses, Modern Fixes With AI — NCRENB-2026 (National Conference on Recent Advances in Engineering)",
+    "Algorithm Performance Optimization — 15% improvement — Datta Meghe College of Engineering — Logithon (Coding Competition)",
+    "Scalable Solution Deployment — 48-hour hackathon — Shree L.R. Tiwari College Hackathon",
+    "Website Performance Optimization — 20% page load reduction — CSI (Computer Society of India) — Viva Institute Chapter",
+  ],
+  skills: [
+    "Python", "Machine Learning", "Deep Learning", "Scikit-learn", "TensorFlow", "PyTorch",
+    "Natural Language Processing", "Computer Vision", "Semantic Search", "Large Language Models (LLM)",
+    "Feature Engineering", "Statistical Analysis", "Predictive Modeling", "XGBoost", "CatBoost", "LightGBM",
+    "SHAP", "MLOps", "Docker", "CI/CD", "REST APIs", "Pandas", "NumPy", "Git", "SQL",
   ],
 };
 
