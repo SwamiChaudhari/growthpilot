@@ -4,12 +4,9 @@ import {
   Phone,
   Mail,
   MapPin,
-  ArrowRight,
   Calendar,
   Clock,
-  CheckCircle,
 } from "lucide-react";
-import Link from "next/link";
 
 export const metadata = {
   title: "Contact GrowthPilot | Book a Free Strategy Call",
