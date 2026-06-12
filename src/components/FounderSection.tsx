@@ -3,6 +3,7 @@
 import { founder } from "@/data/content";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FounderSection() {
   return (
@@ -11,27 +12,23 @@ export default function FounderSection() {
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left — Photo Placeholder */}
+          {/* Left — Photo */}
           <div className="flex justify-center">
             <div className="relative">
               <div className="absolute inset-0 bg-accent-primary/10 rounded-3xl blur-2xl" />
-              <div className="relative w-72 h-80 md:w-80 md:h-96 bg-white border border-border rounded-3xl overflow-hidden flex items-center justify-center shadow-card-hover">
-                <div className="text-center p-6">
-                  <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-4 shadow-cta">
-                    <span className="text-white font-black text-3xl">
-                      {founder.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </span>
-                  </div>
-                  <p className="text-text-primary font-bold text-lg">
-                    {founder.name}
-                  </p>
-                  <p className="text-accent-primary text-sm">{founder.role}</p>
-                  <p className="text-text-muted text-xs mt-2">
-                    [ Founder Photo ]
-                  </p>
+              <div className="relative w-72 h-80 md:w-80 md:h-96 rounded-3xl overflow-hidden flex items-center justify-center shadow-card-hover border border-border">
+                <Image
+                  src="/founder-photo.png"
+                  alt="Swami Chaudhari — AI Engineer & Founder of GrowthPilot"
+                  width={320}
+                  height={384}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+                {/* Caption overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 pt-10">
+                  <p className="text-white font-bold text-sm text-center">Swami Chaudhari</p>
+                  <p className="text-white/80 text-xs text-center">AI Engineer & Founder, GrowthPilot</p>
                 </div>
               </div>
             </div>

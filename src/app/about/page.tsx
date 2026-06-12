@@ -1,6 +1,7 @@
 import { founder, siteConfig } from "@/data/content";
 import { ArrowRight, CheckCircle, MessageCircle, GraduationCap, Briefcase, Award, Code } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "About GrowthPilot | Our Story & Mission",
@@ -31,17 +32,18 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-10 items-start">
             {/* Left — Photo & Quick Info */}
             <div className="flex flex-col items-center">
-              <div className="w-48 h-56 bg-bg-primary border border-border rounded-3xl flex items-center justify-center shadow-card mb-6">
-                <div className="text-center p-4">
-                  <div className="w-20 h-20 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-3 shadow-cta">
-                    <span className="text-white font-black text-2xl">
-                      {founder.name.split(" ").map(n => n[0]).join("")}
-                    </span>
-                  </div>
-                  <p className="text-text-primary font-bold">{founder.name}</p>
-                  <p className="text-accent-primary text-sm">{founder.role}</p>
-                </div>
+              <div className="w-56 h-64 rounded-2xl overflow-hidden shadow-card-hover border border-border mb-6">
+                <Image
+                  src="/founder-photo.png"
+                  alt="Swami Chaudhari — AI Engineer & Founder of GrowthPilot"
+                  width={224}
+                  height={256}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
+              <p className="text-text-primary font-bold text-center">{founder.name}</p>
+              <p className="text-accent-primary text-sm text-center mb-4">{founder.role}</p>
               <div className="w-full space-y-2">
                 <a href="mailto:swami1642004@gmail.com" className="flex items-center gap-2 text-sm text-text-secondary hover:text-accent-primary transition-colors">
                   <span className="w-8 h-8 bg-accent-primary/10 rounded-lg flex items-center justify-center">✉</span>
