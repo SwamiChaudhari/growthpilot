@@ -6,7 +6,7 @@ export const siteConfig = {
   name: "GrowthPilot",
   tagline: "We Don't Build Websites. We Build Growth Engines.",
   description:
-    "Helping local businesses generate more leads, appointments, and revenue through high-converting websites and digital growth systems.",
+    "GrowthPilot builds high-converting websites and digital growth systems for local businesses in India. Specializing in dental clinics, real estate, hotels, and coaching institutes. 50+ businesses grown with 3x more leads on average.",
   url: "https://growthpilot.in",
   phone: "+91 93567 33878",
   whatsapp: "919356733878",
@@ -90,7 +90,7 @@ export const founder = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/#solutions", label: "Solutions" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/#case-studies", label: "Results" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
@@ -685,6 +685,18 @@ export const pricingPlans: PricingPlan[] = [
     cta: "Let's Talk",
   },
 ];
+
+// ============================================
+// PRICING PAGE CONTENT
+// ============================================
+export const pricingPageContent = {
+  title: "Simple, Transparent Pricing",
+  subtitle: "Choose the growth system that fits your business. No hidden fees, no surprises.",
+  description: "Every plan includes a professional website, hosting, and everything you need to start generating leads from day one.",
+  guarantee: "100% Satisfaction Guarantee — If you're not happy with your website, we'll make it right.",
+  cta: "Not sure which plan is right for you? Let's talk.",
+  faqTitle: "Frequently Asked Questions",
+};
 
 // ============================================
 // WHY CHOOSE GROWTHPILOT

@@ -5,22 +5,76 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import LeadPopup from "@/components/LeadPopup";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
 
 export const metadata: Metadata = {
-  title: "GrowthPilot | We Don't Build Websites. We Build Growth Engines.",
-  description: "Helping local businesses generate more leads, appointments, and revenue through high-converting websites and digital growth systems. Book a free strategy call today.",
-  keywords: ["website design", "lead generation", "local SEO", "business growth", "dental clinic website", "real estate website", "hotel website", "Pune", "India"],
+  metadataBase: new URL("https://growthpilot.in"),
+  title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
+  description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
+  keywords: ["website design India", "lead generation website", "local SEO India", "dental clinic website", "real estate website", "hotel website", "business growth website", "Pune", "India"],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
   openGraph: {
     title: "GrowthPilot | Growth Engines for Local Businesses",
     description: "We don't build websites. We build growth engines that generate leads, appointments, and revenue.",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "https://growthpilot.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
+    description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
+    images: ["/og-image.png"],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "GrowthPilot",
+              url: "https://growthpilot.in",
+              telephone: "+91 93567 33878",
+              email: "swami1642004@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Pune",
+                addressRegion: "Maharashtra",
+                addressCountry: "India",
+              },
+              priceRange: "₹₹",
+              serviceArea: "India",
+            }),
+          }}
+        />
+        <GoogleAnalytics gaId={GA_ID} />
+      </head>
       <body className="font-sans">
         <Header />
         <main className="min-h-screen">{children}</main>

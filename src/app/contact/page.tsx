@@ -7,6 +7,7 @@ import {
   Calendar,
   Clock,
 } from "lucide-react";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata = {
   title: "Contact GrowthPilot | Book a Free Strategy Call",
@@ -142,6 +143,9 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          {/* Lead Capture Form */}
+          <LeadForm />
 
           {/* What to Expect */}
           <div className="mt-16 bg-bg-primary rounded-2xl p-8 md:p-10 border border-border">

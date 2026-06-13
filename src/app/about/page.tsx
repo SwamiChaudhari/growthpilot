@@ -39,7 +39,7 @@ export default function AboutPage() {
                   width={224}
                   height={256}
                   className="w-full h-full object-cover"
-                  priority
+                  loading="lazy"
                 />
               </div>
               <p className="text-text-primary font-bold text-center">{founder.name}</p>

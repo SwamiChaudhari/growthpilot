@@ -479,8 +479,60 @@ export default function BlogPostPage({ params }: Props) {
   const article = articleContent[post.slug];
   const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
+  const blogPostJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Swami Chaudhari",
+      url: "https://growthpilot.in/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "GrowthPilot",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://growthpilot.in/og-image.png",
+      },
+    },
+    datePublished: post.date || "2025-01-01",
+    dateModified: post.date || "2025-01-01",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://growthpilot.in/blog/${post.slug}`,
+    },
+  };
+
+  const faqJsonLd =
+    article?.faqs && article.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faqs.map((faq: { q: string; a: string }) => ({
+            "@type": "Question",
+            name: faq.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.a,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       {/* Hero */}
       <section className="bg-gradient-hero bg-hero-pattern py-10 md:py-16 px-4">
         <div className="max-w-3xl mx-auto">

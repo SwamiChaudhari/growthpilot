@@ -30,14 +30,14 @@ export default function HeroSection() {
 
             {/* Headline — mobile-optimized sizing */}
             <h1 className="text-[30px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-text-primary mb-4 md:mb-6 leading-[1.1] tracking-tight">
-              We Don&apos;t Build
+              We Build
               <br />
               <span className="text-gradient">Growth Engines.</span>
             </h1>
 
             {/* Subheadline — max 3 lines on mobile */}
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary mb-6 md:mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Helping local businesses generate more leads, appointments, and revenue through high-converting websites and digital growth systems.
+              High-converting websites &amp; digital growth systems for dental clinics, real estate, hotels, and local businesses across India. Trusted by 50+ businesses.
             </p>
 
             {/* CTA Buttons — full-width on mobile, stacked */}
