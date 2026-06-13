@@ -1,5 +1,5 @@
 import { blogPosts } from "@/data/content";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight, Clock, Calendar } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -49,6 +49,11 @@ export default function BlogPage() {
                     <span className="text-text-muted text-xs flex items-center gap-1">
                       <Clock className="w-3 h-3" /> {post.readTime}
                     </span>
+                    {post.date && (
+                      <span className="text-text-muted text-xs flex items-center gap-1">
+                        <Calendar className="w-3 h-3" /> {new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </span>
+                    )}
                   </div>
                   <h3 className="text-xl font-bold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
                     {post.title}
@@ -87,6 +92,11 @@ export default function BlogPage() {
                     <span className="text-text-muted text-xs flex items-center gap-1">
                       <Clock className="w-3 h-3" /> {post.readTime}
                     </span>
+                    {post.date && (
+                      <span className="text-text-muted text-xs flex items-center gap-1">
+                        <Calendar className="w-3 h-3" /> {new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </span>
+                    )}
                   </div>
                   <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
                     {post.title}

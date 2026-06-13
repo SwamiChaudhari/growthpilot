@@ -1,5 +1,5 @@
 import { blogPosts } from "@/data/content";
-import { Clock, ArrowLeft, MessageCircle, Phone } from "lucide-react";
+import { Clock, ArrowLeft, Calendar, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -494,14 +494,14 @@ export default function BlogPostPage({ params }: Props) {
       name: "GrowthPilot",
       logo: {
         "@type": "ImageObject",
-        url: "https://growthpilot.in/og-image.png",
+        url: "https://growthpilott.vercel.app/og-image.png",
       },
     },
     datePublished: post.date || "2025-01-01",
     dateModified: post.date || "2025-01-01",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://growthpilot.in/blog/${post.slug}`,
+      "@id": `https://growthpilott.vercel.app/blog/${post.slug}`,
     },
   };
 
@@ -542,6 +542,9 @@ export default function BlogPostPage({ params }: Props) {
           <div className="flex items-center gap-3 mb-3 md:mb-4">
             <span className="text-xs font-bold text-accent-primary bg-accent-primary/10 px-2.5 py-1 rounded-full">{post.category}</span>
             <span className="text-text-muted text-xs flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime}</span>
+            {post.date && (
+              <span className="text-text-muted text-xs flex items-center gap-1"><Calendar className="w-3 h-3" /> {new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+            )}
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-3 md:mb-4 tracking-tight leading-tight">{post.title}</h1>
           <p className="text-text-secondary text-sm md:text-base">{post.excerpt}</p>

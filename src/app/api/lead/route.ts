@@ -1,10 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
 };
+
+const leadsFile = path.join(process.cwd(), 'leads.json');
+
+async function readLeads(): Promise<any[]> {
+  try {
+    const data = await fs.readFile(leadsFile, 'utf-8');
+    return JSON.parse(data);
+  } catch {
+    return [];
+  }
+}
+
+async function writeLeads(leads: any[]) {
+  await fs.writeFile(leadsFile, JSON.stringify(leads, null, 2), 'utf-8');
+}
 
 export async function OPTIONS() {
   return new NextResponse(null, {
@@ -41,7 +58,13 @@ export async function POST(request: NextRequest) {
       receivedAt: new Date().toISOString(),
     };
 
+    // Store to file
+    const leads = await readLeads();
+    leads.push(lead);
+    await writeLeads(leads);
+
     console.log('[GrowthPilot Lead]', JSON.stringify(lead, null, 2));
+    console.log(`[GrowthPilot] Total leads: ${leads.length}`);
 
     return NextResponse.json(
       { success: true },

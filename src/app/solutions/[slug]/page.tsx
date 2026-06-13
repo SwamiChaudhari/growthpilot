@@ -1,6 +1,7 @@
 import { solutions, siteConfig } from "@/data/content";
 import { ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import Script from "next/script";
 
 interface Props {
   params: { slug: string };
@@ -34,6 +35,55 @@ export default function SolutionPage({ params }: Props) {
 
   return (
     <>
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-border">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-text-muted">
+            <li>
+              <Link href="/" className="hover:text-accent-primary transition-colors">Home</Link>
+            </li>
+            <li className="text-text-muted">/</li>
+            <li>
+              <Link href="/#solutions" className="hover:text-accent-primary transition-colors">Solutions</Link>
+            </li>
+            <li className="text-text-muted">/</li>
+            <li className="text-text-primary font-medium">{solution.title}</li>
+          </ol>
+        </div>
+      </nav>
+
+      {/* BreadcrumbList JSON-LD */}
+      <Script
+        id="breadcrumb-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://growthpilott.vercel.app/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Solutions",
+                item: "https://growthpilott.vercel.app/#solutions",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: solution.title,
+                item: `https://growthpilott.vercel.app/solutions/${solution.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">

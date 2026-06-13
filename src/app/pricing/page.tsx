@@ -17,6 +17,19 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <>
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-border">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-text-muted">
+            <li>
+              <Link href="/" className="hover:text-accent-primary transition-colors">Home</Link>
+            </li>
+            <li className="text-text-muted">/</li>
+            <li className="text-text-primary font-medium">Pricing</li>
+          </ol>
+        </div>
+      </nav>
+
       {/* Hero */}
       <section className="bg-gradient-hero bg-hero-pattern py-12 md:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

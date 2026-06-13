@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     "max-video-preview": -1,
   },
   openGraph: {
-    title: "GrowthPilot | Growth Engines for Local Businesses",
-    description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads.",
+    title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
+    description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
     type: "website",
     locale: "en_IN",
     images: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
     description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
-    images: ["/og-image.png"],
+    images: ["https://growthpilott.vercel.app/og-image.png"],
   },
 };
 
