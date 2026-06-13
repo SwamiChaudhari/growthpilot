@@ -10,7 +10,16 @@ const corsHeaders = {
 
 const leadsFile = path.join(process.cwd(), 'leads.json');
 
-async function readLeads(): Promise<any[]> {
+interface Lead {
+  name: string;
+  email: string;
+  phone: string;
+  businessType: string;
+  message: string;
+  receivedAt: string;
+}
+
+async function readLeads(): Promise<Lead[]> {
   try {
     const data = await fs.readFile(leadsFile, 'utf-8');
     return JSON.parse(data);
@@ -19,7 +28,7 @@ async function readLeads(): Promise<any[]> {
   }
 }
 
-async function writeLeads(leads: any[]) {
+async function writeLeads(leads: Lead[]) {
   await fs.writeFile(leadsFile, JSON.stringify(leads, null, 2), 'utf-8');
 }
 
