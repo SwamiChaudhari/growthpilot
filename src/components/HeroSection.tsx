@@ -30,8 +30,7 @@ export default function HeroSection() {
 
             {/* Headline — mobile-optimized sizing */}
             <h1 className="text-[30px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-text-primary mb-4 md:mb-6 leading-[1.1] tracking-tight">
-              We Build
-              <br />
+              We Build{" "}
               <span className="text-gradient">Growth Engines.</span>
             </h1>
 

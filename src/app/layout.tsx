@@ -7,10 +7,10 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 import LeadPopup from "@/components/LeadPopup";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://growthpilot.in"),
+  metadataBase: new URL("https://growthpilott.vercel.app"),
   title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
   description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
   keywords: ["website design India", "lead generation website", "local SEO India", "dental clinic website", "real estate website", "hotel website", "business growth website", "Pune", "India"],
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "GrowthPilot | Growth Engines for Local Businesses",
-    description: "We don't build websites. We build growth engines that generate leads, appointments, and revenue.",
+    description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads.",
     type: "website",
     locale: "en_IN",
     images: [
       {
-        url: "https://growthpilot.in/og-image.png",
+        url: "https://growthpilott.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link rel="icon" sizes="32x32" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "GrowthPilot",
-              url: "https://growthpilot.in",
+              url: "https://growthpilott.vercel.app",
               telephone: "+91 93567 33878",
               email: "swami1642004@gmail.com",
               address: {

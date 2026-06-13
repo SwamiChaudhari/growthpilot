@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://growthpilot.in/sitemap.xml
+Sitemap: https://growthpilott.vercel.app/sitemap.xml

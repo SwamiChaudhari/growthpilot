@@ -7,7 +7,7 @@ export const siteConfig = {
   tagline: "We Don't Build Websites. We Build Growth Engines.",
   description:
     "GrowthPilot builds high-converting websites and digital growth systems for local businesses in India. Specializing in dental clinics, real estate, hotels, and coaching institutes. 50+ businesses grown with 3x more leads on average.",
-  url: "https://growthpilot.in",
+  url: "https://growthpilott.vercel.app",
   phone: "+91 93567 33878",
   whatsapp: "919356733878",
   email: "swami1642004@gmail.com",
