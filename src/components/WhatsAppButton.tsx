@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${siteConfig.whatsapp}?text=Hi, I'd like to discuss my business growth.`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-50 w-14 h-14 bg-success rounded-full flex items-center justify-center shadow-lg shadow-success/30 hover:scale-110 active:scale-95 transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-success rounded-full flex items-center justify-center shadow-lg shadow-success/30 hover:scale-110 active:scale-95 transition-all duration-300 group hidden md:flex"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle className="w-7 h-7 text-white" />
