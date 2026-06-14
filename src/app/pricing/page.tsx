@@ -1,5 +1,5 @@
-import { pricingPlans, pricingPageContent, siteConfig } from "@/data/content";
-import { CheckCircle, MessageCircle, ArrowRight, Shield } from "lucide-react";
+import { pricingPlans, pricingPageContent } from "@/data/content";
+import { CheckCircle, ArrowRight, Shield, Calendar } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -80,7 +80,7 @@ export default function PricingPage() {
                 </div>
 
                 <div className="mb-3 md:mb-4">
-                  <div className="flex items-baseline gap-2">
+                  <div className="flex items-baseline gap-2 flex-wrap">
                     <span
                       className={`text-2xl md:text-3xl font-bold ${
                         plan.highlighted ? "text-white" : "text-text-primary"
@@ -98,6 +98,11 @@ export default function PricingPage() {
                       </span>
                     )}
                   </div>
+                  {plan.originalPrice && plan.price !== "Custom" && (
+                    <span className={`inline-block mt-1.5 text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full ${plan.highlighted ? "bg-white/20 text-white" : "bg-success/10 text-success"}`}>
+                      Save {Math.round((1 - parseInt(plan.price.replace(/[₹,]/g, "")) / parseInt(plan.originalPrice.replace(/[₹,]/g, ""))) * 100)}%
+                    </span>
+                  )}
                   <p
                     className={`text-[10px] md:text-xs mt-1 ${
                       plan.highlighted ? "text-white/60" : "text-text-muted"
@@ -226,12 +231,12 @@ export default function PricingPage() {
             Book Free Strategy Call <ArrowRight className="w-5 h-5" />
           </Link>
           <a
-            href={`https://wa.me/${siteConfig.whatsapp}?text=Hi, I'd like to discuss pricing.`}
+            href="https://calendly.com/swami1642004/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-white/30 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 active:scale-[0.97] transition-all duration-300 inline-flex items-center justify-center gap-2"
           >
-            <MessageCircle className="w-5 h-5" /> WhatsApp Us
+            <Calendar className="w-5 h-5" /> Schedule on Calendly
           </a>
         </div>
       </section>

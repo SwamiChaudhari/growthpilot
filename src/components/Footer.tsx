@@ -96,6 +96,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
             <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+            <div className="flex items-center gap-2 text-gray-500 text-xs">
+              <Link href="/privacy-policy" className="hover:text-accent-primary transition-colors">Privacy Policy</Link>
+              <span>|</span>
+              <Link href="/terms-of-service" className="hover:text-accent-primary transition-colors">Terms of Service</Link>
+            </div>
             <p>Built with growth in mind — Pune, Maharashtra</p>
           </div>
         </div>

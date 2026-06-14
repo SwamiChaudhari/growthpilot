@@ -494,7 +494,7 @@ export default function BlogPostPage({ params }: Props) {
       name: "GrowthPilot",
       logo: {
         "@type": "ImageObject",
-        url: "https://growthpilott.vercel.app/og-image.png",
+        url: "https://growthpilott.vercel.app/og-image.svg",
       },
     },
     datePublished: post.date || "2025-01-01",

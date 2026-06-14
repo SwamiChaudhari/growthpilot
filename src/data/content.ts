@@ -95,6 +95,8 @@ export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy" },
+  { href: "/terms-of-service", label: "Terms" },
 ];
 
 // ============================================

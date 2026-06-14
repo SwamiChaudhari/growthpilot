@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import TrustBar from "@/components/TrustBar";
+import ClientLogos from "@/components/ClientLogos";
 import PainPointsSection from "@/components/PainPointsSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import GrowthFrameworkSection from "@/components/GrowthFrameworkSection";
@@ -39,6 +40,7 @@ export default function HomePage() {
       />
       <HeroSection />
       <TrustBar />
+      <ClientLogos />
       <PainPointsSection />
       <SolutionsSection />
       <GrowthFrameworkSection />

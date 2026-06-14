@@ -6,6 +6,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import LeadPopup from "@/components/LeadPopup";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import BackToTop from "@/components/BackToTop";
+import EmailCapture from "@/components/EmailCapture";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "https://growthpilott.vercel.app/og-image.png",
+        url: "https://growthpilott.vercel.app/og-image.svg",
         width: 1200,
         height: 630,
         alt: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GrowthPilot | Website & Lead Generation for Local Businesses in India",
     description: "We build high-converting websites for dental clinics, real estate, hotels & local businesses in India. 50+ businesses grown. 3x more leads. Book your free strategy call.",
-    images: ["https://growthpilott.vercel.app/og-image.png"],
+    images: ["https://growthpilott.vercel.app/og-image.svg"],
   },
 };
 
@@ -82,6 +84,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WhatsAppButton />
         <StickyMobileCTA />
         <LeadPopup />
+        <BackToTop />
+        <EmailCapture />
       </body>
     </html>
   );

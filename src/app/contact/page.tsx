@@ -74,7 +74,7 @@ export default function ContactPage() {
                 30-minute free call to discuss your business growth plan.
               </p>
               <a
-                href={`https://wa.me/${siteConfig.whatsapp}?text=Hi, I'd like to book a free strategy call.`}
+                href="https://calendly.com/swami1642004/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full"
