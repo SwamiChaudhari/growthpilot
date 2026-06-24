@@ -78,7 +78,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>At GrowthPilot, we build websites specifically designed to generate leads and grow your business. We focus on what matters: speed, mobile experience, and conversion.</p>`,
     faqs: [
-      { q: "How much does a professional website cost?", a: "A professional business website typically starts from ₹15,000 to ₹60,000 depending on your requirements. The key is to think of it as an investment, not an expense. A good website generates leads and pays for itself." },
+      { q: "How much does a professional website cost?", a: "A professional business website typically starts from 99 to 99 depending on your requirements. The key is to think of it as an investment, not an expense. A good website generates leads and pays for itself." },
       { q: "How long does it take to build a website?", a: "Most business websites can be built and launched within 3 to 10 days. The timeline depends on the complexity and how quickly you provide the content and feedback." },
       { q: "Do I need technical knowledge to maintain my website?", a: "No. We build websites that are easy to manage. We also provide training and ongoing support so you can make basic updates yourself." },
       { q: "Will my website work well on mobile phones?", a: "Absolutely. We design every website mobile-first, meaning it's built specifically for smartphones first, then adapted for desktop. This is important because most of your visitors will be on their phones." },
@@ -219,7 +219,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 <p>At GrowthPilot, we build websites that avoid all of these mistakes from the start. Fast, mobile-friendly, and designed to convert visitors into customers.</p>`,
     faqs: [
       { q: "How do I know if my website is too slow?", a: "You can test your website speed for free at Google PageSpeed Insights (pagespeed.web.dev). If your score is below 70, your website needs optimization." },
-      { q: "How much does it cost to fix these website problems?", a: "It depends on the severity. Some fixes like adding contact buttons are simple. A complete redesign might cost ₹15,000-60,000. The important thing is to fix them — every day you wait is lost customers." },
+      { q: "How much does it cost to fix these website problems?", a: "It depends on the severity. Some fixes like adding contact buttons are simple. A complete redesign might cost 99-99. The important thing is to fix them — every day you wait is lost customers." },
       { q: "Can I add reviews to my website myself?", a: "Yes. You can simply ask customers for testimonials and add them to your website. For Google reviews, ask customers to search your business on Google and leave a review." },
       { q: "How often should I update my website?", a: "At minimum, review your website every 6 months. Update any changed information, add new content, and make sure everything still works properly on mobile." },
     ],
@@ -373,7 +373,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>Every dental website we build includes WhatsApp integration, appointment booking, service pages, and local SEO optimization.</p>`,
     faqs: [
-      { q: "How much does a dental clinic website cost?", a: "A professional dental clinic website typically costs between ₹20,000 to ₹60,000 depending on the features you need. This includes design, content, appointment booking, and SEO setup." },
+      { q: "How much does a dental clinic website cost?", a: "A professional dental clinic website typically costs between 99 to 99 depending on the features you need. This includes design, content, appointment booking, and SEO setup." },
       { q: "How long does it take to build a dental website?", a: "Most dental websites can be completed within 7-14 days. The timeline depends on how quickly you provide content like service descriptions and photos." },
       { q: "Can patients really book appointments online?", a: "Yes. We integrate appointment booking systems that let patients select a date and time directly from your website. You'll receive the booking details instantly." },
       { q: "Will my website show up when people search for dentists in my area?", a: "Yes. We optimize every website for local SEO, which means it's designed to rank well when people search for dental services in your area." },
@@ -382,7 +382,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
   "cost-of-website-india-2025": {
     content: `<p>One of the most common questions we hear is: "How much does a website actually cost in India?" It's a fair question, and the answer isn't as straightforward as you might think.</p>
 
-<p>The cost of a website can range from ₹5,000 to ₹5,00,000 or more. That's a huge range. So let me break it down so you can understand what you're actually paying for.</p>
+<p>The cost of a website can range from 9 to ,999 or more. That's a huge range. So let me break it down so you can understand what you're actually paying for.</p>
 
 <h2>Why Website Costs Vary So Much</h2>
 
@@ -390,7 +390,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>Here's a general breakdown:</p>
 
-<h2>Budget Websites: ₹5,000 - ₹15,000</h2>
+<h2>Budget Websites: 9 - 99</h2>
 
 <p>At this price point, you're usually getting a basic website built using templates. It might look okay, but it often lacks:</p>
 <ul>
@@ -403,7 +403,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>This might work for a very small business that just needs a basic online presence. But it's unlikely to generate significant leads or revenue.</p>
 
-<h2>Professional Business Websites: ₹15,000 - ₹60,000</h2>
+<h2>Professional Business Websites: 99 - 99</h2>
 
 <p>This is the sweet spot for most local businesses. At this price, you get:</p>
 <ul>
@@ -418,7 +418,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>This is what most businesses need. A professional website that generates leads and helps you grow.</p>
 
-<h2>Premium Websites: ₹60,000 - ₹2,00,000</h2>
+<h2>Premium Websites: 99 - ,999</h2>
 
 <p>For businesses that need more advanced features:</p>
 <ul>
@@ -435,22 +435,22 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 
 <p>The right question isn't "what's the cheapest website?" It's "what do I need to grow my business?"</p>
 
-<p>Think about it this way: if your website generates just 5 extra inquiries per month, and each inquiry is worth ₹5,000 to your business, that's ₹25,000 per month or ₹3,00,000 per year. A ₹30,000 website pays for itself in less than 2 months.</p>
+<p>Think about it this way: if your website generates just 5 extra inquiries per month, and each inquiry is worth $50 to your business, that's $450 per month or $5,400 per year. A $399 website pays for itself in less than 2 months.</p>
 
 <p>Here's what we recommend for different types of businesses:</p>
 
-<p><strong>New businesses:</strong> Start with a professional website in the ₹15,000-30,000 range. Get online, start generating leads, and upgrade as you grow.</p>
+<p><strong>New businesses:</strong> Start with a professional website in the 99-99 range. Get online, start generating leads, and upgrade as you grow.</p>
 
 <p><strong>Established businesses:</strong> Invest in a premium website with booking systems and advanced features. The ROI is worth it.</p>
 
-<p><strong>E-commerce businesses:</strong> Budget for ₹60,000+ to get proper product pages, payment integration, and a smooth shopping experience.</p>
+<p><strong>E-commerce businesses:</strong> Budget for 99+ to get proper product pages, payment integration, and a smooth shopping experience.</p>
 
 <h2>Hidden Costs to Watch Out For</h2>
 
 <p>When comparing website prices, make sure you understand what's included:</p>
 
-<p><strong>Domain name:</strong> ₹500-1,000 per year for a .com or .in domain</p>
-<p><strong>Hosting:</strong> ₹2,000-10,000 per year depending on quality</p>
+<p><strong>Domain name:</strong> 0-20 per year for a .com or .in domain</p>
+<p><strong>Hosting:</strong> 5-120 per year depending on quality</p>
 <p><strong>SSL certificate:</strong> Often included, but some charge extra</p>
 <p><strong>Content writing:</strong> Some include it, some charge separately</p>
 <p><strong>Maintenance:</strong> Monthly or yearly fees for updates and support</p>
@@ -465,7 +465,7 @@ const articleContent: Record<string, { content: string; faqs: { q: string; a: st
 <p>Investing in a professional website is investing in your business's growth. It's not an expense — it's a tool that works for you 24 hours a day, 7 days a week.</p>`,
     faqs: [
       { q: "Is a free website builder (like Wix or WordPress.com) good enough?", a: "Free website builders can work for personal projects, but for a business, they have serious limitations. Your website will have their branding, limited features, poor SEO, and you don't fully own it. A professional website is a better long-term investment." },
-      { q: "Do I need to pay for hosting every year?", a: "Yes. Hosting is like rent for your website — it's what keeps your website accessible on the internet. Good hosting costs ₹2,000-10,000 per year and is essential for a fast, reliable website." },
+      { q: "Do I need to pay for hosting every year?", a: "Yes. Hosting is like rent for your website — it's what keeps your website accessible on the internet. Good hosting costs 5-120 per year and is essential for a fast, reliable website." },
       { q: "Can I build a website myself to save money?", a: "You can, but consider the value of your time. Learning to build a website, writing content, optimizing for SEO, and maintaining it takes hundreds of hours. For most business owners, it's more cost-effective to hire a professional." },
       { q: "What's included in GrowthPilot's website packages?", a: "Our packages include custom design, mobile-first development, SEO setup, content writing, WhatsApp integration, contact forms, hosting for the first year, SSL certificate, and 30 days of free support after launch." },
     ],

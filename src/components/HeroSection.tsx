@@ -114,7 +114,7 @@ export default function HeroSection() {
                     { label: "Leads Generated", value: "1,247", change: "+156%", icon: Users },
                     { label: "Website Traffic", value: "8,432", change: "+89%", icon: Globe },
                     { label: "Conversions", value: "12.4%", change: "+340%", icon: TrendingUp },
-                    { label: "Revenue Impact", value: "₹4.2L", change: "+247%", icon: BarChart3 },
+                    { label: "Revenue Impact", value: "$5,040", change: "+247%", icon: BarChart3 },
                   ].map((metric, i) => (
                     <div key={i} className="bg-bg-primary rounded-lg sm:rounded-xl p-2.5 sm:p-3 border border-border">
                       <div className="flex items-center gap-1.5 sm:gap-2 mb-1">

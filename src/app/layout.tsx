@@ -70,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 addressRegion: "Maharashtra",
                 addressCountry: "India",
               },
-              priceRange: "₹₹",
+              priceRange: "$$",
               serviceArea: "India",
             }),
           }}

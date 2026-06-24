@@ -19,7 +19,7 @@ export default function OfferStackSection() {
           <div className="relative bg-white rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 border border-border shadow-card-hover">
             <div className="text-center mb-6 md:mb-8">
               <div className="inline-flex items-center gap-2 bg-accent-primary/10 border border-accent-primary/20 text-accent-primary px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold">
-                Total Value: ₹1,50,000+ | Starting at just ₹14,999
+                Total Value: $1,800+ | Starting at just $299
               </div>
             </div>
 
