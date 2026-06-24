@@ -541,7 +541,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: [
       { metric: "Direct Bookings", value: "2.5x Increase" },
-      { metric: "OTA Commission Savings", value: "₹2.5L/year" },
+      { metric: "OTA Commission Savings", value: "$2.5L/year" },
       { metric: "Average Booking Value", value: "20% Higher" },
       { metric: "Guest Inquiry Rate", value: "4x Growth" },
     ],
@@ -600,8 +600,8 @@ export const pricingPlans: PricingPlan[] = [
     slug: "starter",
     name: "Starter Growth System",
     tagline: "Perfect for new businesses",
-    price: "₹14,999",
-    originalPrice: "₹24,999",
+    price: "$14,999",
+    originalPrice: "$24,999",
     description:
       "A professional website that establishes your online presence and starts generating leads from day one.",
     features: [
@@ -621,8 +621,8 @@ export const pricingPlans: PricingPlan[] = [
     slug: "business",
     name: "Business Growth System",
     tagline: "Most popular choice",
-    price: "₹29,999",
-    originalPrice: "₹49,999",
+    price: "$29,999",
+    originalPrice: "$49,999",
     description:
       "A complete growth system designed to generate leads, build trust, and drive consistent business growth.",
     features: [
@@ -645,8 +645,8 @@ export const pricingPlans: PricingPlan[] = [
     slug: "premium",
     name: "Premium Growth System",
     tagline: "For serious growth",
-    price: "₹59,999",
-    originalPrice: "₹99,999",
+    price: "$59,999",
+    originalPrice: "$99,999",
     description:
       "A premium growth system with advanced features, automation, and dedicated support for maximum results.",
     features: [
@@ -786,7 +786,7 @@ export const testimonials = [
   },
   {
     quote:
-      "We've saved over ₹2.5 lakhs in OTA commissions in the first year alone. The direct booking system GrowthPilot built is a game-changer for our resort.",
+      "We've saved over $2.5 lakhs in OTA commissions in the first year alone. The direct booking system GrowthPilot built is a game-changer for our resort.",
     name: "Anita Fernandes",
     role: "Resort Owner, Goa",
     rating: 5,
@@ -871,7 +871,7 @@ export const referralProgram = {
   rewards: [
     {
       title: "Cash Rewards",
-      description: "Earn ₹2,000-5,000 for every successful referral",
+      description: "Earn $2,000-5,000 for every successful referral",
       icon: "IndianRupee",
     },
     {

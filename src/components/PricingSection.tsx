@@ -59,7 +59,7 @@ export default function PricingSection() {
                 </div>
                 {plan.originalPrice && plan.price !== "Custom" && (
                   <span className={`inline-block mt-1.5 text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full ${plan.highlighted ? "bg-white/20 text-white" : "bg-success/10 text-success"}`}>
-                    Save {Math.round((1 - parseInt(plan.price.replace(/[₹,]/g, "")) / parseInt(plan.originalPrice.replace(/[₹,]/g, ""))) * 100)}%
+                    Save {Math.round((1 - parseInt(plan.price.replace(/[$,]/g, "")) / parseInt(plan.originalPrice.replace(/[$,]/g, ""))) * 100)}%
                   </span>
                 )}
                 <p className={`text-[10px] md:text-xs mt-1 ${plan.highlighted ? "text-white/60" : "text-text-muted"}`}>
