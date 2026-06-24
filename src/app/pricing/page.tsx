@@ -5,10 +5,10 @@ import Link from "next/link";
 export const metadata = {
   title: "Pricing | GrowthPilot — Website Packages for Local Businesses",
   description:
-    "Simple, transparent pricing for professional websites. Starter from $14,999. Business, Premium, and Enterprise plans available. Book a free strategy call.",
+    "Simple, transparent pricing for professional websites. Starter from ₹14,999. Business, Premium, and Enterprise plans available. Book a free strategy call.",
   openGraph: {
     title: "Pricing | GrowthPilot Website Packages",
-    description: "Simple, transparent pricing for professional websites. Starter from $14,999.",
+    description: "Simple, transparent pricing for professional websites. Starter from ₹14,999.",
     type: "website",
     locale: "en_IN",
   },
@@ -100,7 +100,7 @@ export default function PricingPage() {
                   </div>
                   {plan.originalPrice && plan.price !== "Custom" && (
                     <span className={`inline-block mt-1.5 text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-full ${plan.highlighted ? "bg-white/20 text-white" : "bg-success/10 text-success"}`}>
-                      Save {Math.round((1 - parseInt(plan.price.replace(/[$,]/g, "")) / parseInt(plan.originalPrice.replace(/[$,]/g, ""))) * 100)}%
+                      Save {Math.round((1 - parseInt(plan.price.replace(/[₹,]/g, "")) / parseInt(plan.originalPrice.replace(/[₹,]/g, ""))) * 100)}%
                     </span>
                   )}
                   <p
